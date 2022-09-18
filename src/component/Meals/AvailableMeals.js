@@ -30,7 +30,7 @@ const DUMMY_MEALS = [
 ];
 const AvailableMeals = () => {
     const mealsList = DUMMY_MEALS.map((meal) => {
-       return <MealsItem key={meal.id} meal={meal}/>
+       return <MealsItem key={meal.id} meal={meal} id={meal.id}/>
     })
     return <Fragment>
         <section className={classes.meals}>
